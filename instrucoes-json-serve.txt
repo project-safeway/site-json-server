@@ -1,0 +1,20 @@
+Instalar o JSON Server
+> npm install -g json-server
+===================================================================
+Rodar o JSON Server
+> json-server --watch db.json --port 3000
+    - O servidor vai ficar disponível em: http://localhost:3000/usuarios
+===================================================================
+RECOMENDAÇÃO: usar LIVE SERVER (VSCODE)
+    - Clique com o botão direito em login.html → Open with Live Server
+    - A página abrirá em algo como http://127.0.0.1:5500/login.html
+    - Evita problemas de CORS ao fazer fetch para localhost:3000.
+===================================================================
+!!!!! Pontos importantes !!!!!
+
+Sempre verifique se o JSON Server está rodando antes de testar cadastro/login.
+
+Evite abrir HTML diretamente (file://), use Live Server ou outro servidor local.
+
+Para mensagens de sucesso, use elementos visuais na página, não alert(), para não travar o redirecionamento.
+
