@@ -1,5 +1,5 @@
-# Projeto do Grupo 1 - Versão Inicial do Site 
-Este repositório contém a **versão inicial do site do Grupo 1**, utilizando **JSON Server** para simular uma API local de usuários. O projeto inclui páginas de login e cadastro, permitindo testar funcionalidades básicas de autenticação. 
+# Projeto do Grupo 1 - Versão Inicial do Site SafeWay
+Este repositório contém a **versão inicial do site SafeWay**, utilizando **JSON Server** para simular uma API local de usuários. O projeto inclui páginas de login e cadastro, permitindo testar funcionalidades básicas de autenticação. 
 
 ## 🔧 Pré-requisitos
 Antes de começar, você precisa ter instalado: 
@@ -32,13 +32,13 @@ Através desse caminho é possível observar no seu navegador os usuários cadas
 
 
 ### Abrindo as páginas HTML com Live Server
-Para evitar problemas de CORS, não abra os arquivos HTML diretamente. Faça assim:
+- Para evitar problemas de CORS, não abra os arquivos HTML diretamente. Faça assim:
 
-Clique com o botão direito em login.html (ou cadastro.html / index.html).
+- Clique com o botão direito em login.html (ou cadastro.html / index.html).
 
-Selecione Open with Live Server.
+- Selecione Open with Live Server.
 
-A página abrirá em algo como:
+- A página abrirá em algo como:
 ```bash
 http://127.0.0.1:5500/login.html
 ```
