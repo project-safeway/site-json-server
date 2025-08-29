@@ -2,21 +2,65 @@
   "usuarios": [
     {
       "id": "1",
+      "cnpj": "12.345.678/0001-99",
       "nome": "Ariel",
+      "razaoSocial": "Transporte Escolar Ariel LTDA",
+      "telefone": "(11) 99999-9999",
+      "cep": "12345-678",
       "email": "ariel@email.com",
       "senha": "123456"
     },
     {
-      "id": "ed7a",
-      "nome": "Nicolas",
-      "email": "nicolas@email.com",
+      "id": "4d45",
+      "cnpj": "11000111000000100",
+      "nome": "Van-teste",
+      "razaoSocial": "caroninha SA",
+      "telefone": "11 9 1234 1234",
+      "cep": "03908050",
+      "email": "caroninha@email.com",
       "senha": "123"
+    }
+  ],
+  "escolas": [
+    {
+      "id": "1",
+      "nome": "Escola Municipal ABC",
+      "endereco": "Av. Central, 456",
+      "telefone": "(11) 98888-8888",
+      "cep": "11111-111"
     },
     {
-      "id": "f423",
-      "nome": "hahiu",
-      "email": "daihsiah@email.com",
-      "senha": "123"
+      "id": "2",
+      "nome": "Colégio Futuro",
+      "endereco": "Rua Nova, 789",
+      "telefone": "(11) 97777-7777",
+      "cep": "12345-678"
+    }
+  ],
+  "alunos": [
+    {
+      "id": "1",
+      "usuarioId": "1",
+      "nome": "Pedro Souza",
+      "responsavel1": "Maria Souza",
+      "responsavel2": "Carlos Souza",
+      "endereco": "Rua das Flores, 123",
+      "cep": "98765-432",
+      "escolaId": 1,
+      "dataNascimento": "2012-05-10",
+      "dataPagamento": "2025-09-05"
+    },
+    {
+      "id": "2",
+      "usuarioId": "1",
+      "nome": "Ana Lima",
+      "responsavel1": "João Lima",
+      "responsavel2": "",
+      "endereco": "Rua das Palmeiras, 321",
+      "cep": "12345-678",
+      "escolaId": 2,
+      "dataNascimento": "2011-11-20",
+      "dataPagamento": "2025-09-10"
     }
   ]
 }

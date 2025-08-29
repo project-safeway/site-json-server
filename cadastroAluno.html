@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Aluno</title>
+  </head>
+  <body>
+    <h1 id="tituloForm">Cadastro de Aluno</h1>
+
+    <form id="formCadastroAluno">
+      <input type="hidden" id="alunoId" />
+
+      <label for="nome">Nome do aluno: </label>
+      <input type="text" id="nome" placeholder="Nome do aluno" required /><br />
+
+      <label for="responsavel1">Responsável(1): </label>
+      <input
+        type="text"
+        id="responsavel1"
+        placeholder="Responsável 1"
+        required
+      /><br />
+
+      <label for="responsavel2">Responsável(2): </label>
+      <input type="text" id="responsavel2" placeholder="Responsável 2" /><br />
+
+      <label for="endereco">Endereço: </label>
+      <input type="text" id="endereco" placeholder="Endereço do aluno" /><br />
+
+      <label for="cep">CEP: </label>
+      <input type="text" id="cep" placeholder="CEP do aluno" /><br />
+
+      <label for="escolaId">Escola: </label>
+      <select id="escolaId" required>
+        <option value="1">Escola Municipal ABC</option>
+        <option value="2">Colégio Futuro</option></select
+      ><br />
+
+      <label for="dataNascimento">Data de nascimento: </label>
+      <input type="date" id="dataNascimento" /><br />
+
+      <label for="dataPagamento">Pagamento: </label>
+      <input type="date" id="dataPagamento" /><br />
+      <button type="submit">Salvar</button>
+    </form>
+
+    <button id="btnVoltar">Voltar</button>
+
+    <script src="cadastroAluno.js"></script>
+  </body>
+</html>
