@@ -3,25 +3,26 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
 
   const email = document.getElementById("emailLogin").value;
   const senha = document.getElementById("senhaLogin").value;
+  const divMensagem = document.getElementById("div-mensagem-login"); // pega o div
 
   fetch(`http://localhost:3000/usuarios?email=${email}&senha=${senha}`)
     .then(res => res.json())
     .then(data => {
       if (data.length > 0) {
-        // Salva o usuário logado no localStorage
         localStorage.setItem("usuarioLogado", JSON.stringify(data[0]));
-
-        // Redireciona para a página pós-login
         window.location.href = "poslogin.html";
       } else {
-        alert("E-mail ou senha incorretos!");
+        divMensagem.innerHTML = "E-mail ou senha incorretos!";
+        divMensagem.style.color = "red"; //deixa a mensagem vermelha
       }
+    })
+    .catch(err => {
+      divMensagem.innerHTML = "Erro na conexão com o servidor.";
+      divMensagem.style.color = "red";//deixa a mensagem vermelha
+      console.error(err);
     });
 });
 
-//muda para a tela de cadastro pelo botão
-document.getElementById('btnCadastrar').addEventListener('click',
-    function(){
-        window.location.href = "cadastro.html";
-    }
-);
+document.getElementById("btnCadastrar").addEventListener("click",()=>{
+  window.location.href = "cadastro.html";
+})

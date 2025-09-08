@@ -1,0 +1,173 @@
+/*
+RESETS/PADRONIZAÇÃO
+*/
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0F172A;
+    color: #0F172A;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/*
+ sessão - formulário - login
+*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #f6f6f6b6;
+    padding-inline: 32px;
+    padding-bottom: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.419);
+}
+
+.formulario h2{
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario label {
+    text-align: start;
+    width: 75%;
+}
+
+.formulario form input {
+    width: 75%;
+    height: 40px;
+    padding-inline: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.botao-formulario {
+    width: 60%;
+    height: 40px;
+    font-size: larger;
+    background-color: #FB923C;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-weight: 900;
+    color: #0F172A;
+}
+
+.botao-formulario:hover{
+    background-color: #ffaa64;
+}
+
+.botao-secundario{
+    background-color: #0F172A;
+    color: #f6f6f68d;
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao-secundario:hover{
+    background-color: #263351;
+
+}
+
+/* POS LOGIN */
+
+.container{
+    background-color: #f6f6f6b6;
+    padding-bottom: 24px;
+    /* height: 70%; */
+}
+
+.tabela {
+    width: 75%;
+    text-align: center;
+}
+
+.container button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    background-color: #0F172A;
+    color: #f6f6f6b6;
+    margin: 4px;
+}
+
+.container button:hover{
+    background-color: #ffaa64;
+    color: #0F172A;
+}
+
+/* CADASTRO ALUNOS */
+.container input,select{
+    border: none;
+    border-radius: 4px;
+    height: 32px;
+    margin: 4px;
+    padding-inline: 4px;
+}
+
+.alinhamento-botao button{
+    margin-left: 41%;
+
+}
+
+
+@media (min-width: 824px) {
+    
+   .formulario{
+    width: 40%;
+    height: auto;
+    padding-bottom: 16px;
+   }
+
+   .formulario form {
+    height: auto;
+   }
+
+   .formulario h2{
+    margin-bottom: 1rem;
+   }
+
+   .formulario form input{
+    margin: 0;
+    height: 24px;
+   }
+
+
+   .botao-formulario{
+    width: 30%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+   }
+  
+
+}

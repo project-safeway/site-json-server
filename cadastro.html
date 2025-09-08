@@ -3,20 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>SafeWay - Cadastro</title>
   </head>
   <body>
-    <form id="formCadastro">
-      <input type="text" id="nome" placeholder="Nome" required />
-      <br />
-      <input type="email" id="email" placeholder="E-mail" required />
-      <br />
-      <input type="password" id="senha" placeholder="Senha" required />
-      <br />
-      <button type="submit">Cadastrar</button>
-    </form>
+    <main>
+      <section class="formulario">
+        <h2>Cadastro</h2>
+        <form id="formCadastro">
+        
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" placeholder="CNPJ" required /><br />
 
-    <button id="btnLogin">Logar</button>
+        <label for="nome">Nome da Empresa:</label>
+        <input type="text" id="nome" placeholder="Nome" required /><br />
+
+        <label for="razaoSocial">Razao Social:</label>
+        <input
+          type="text"
+          id="razaoSocial"
+          placeholder="Razão Social"
+          required
+        /><br />
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" placeholder="Telefone" required /><br />
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" placeholder="CEP" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="E-mail" required /><br />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Senha" required /><br />
+
+        <button class="botao-formulario" type="submit">Cadastrar</button>
+      </form>
+    <button class="botao-secundario" id="btnLogin">Ir para Login</button>
+
+    </section>
+    </main>
 
     <!-- scripts -->
     <script src="cadastro.js"></script>

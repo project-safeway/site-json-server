@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+      <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>Cadastro de Aluno</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 id="tituloForm">Cadastro/Edição de Aluno</h1>
+
+      <form class="alinhamento-botao" id="formCadastroAluno">
+        <input type="hidden" id="alunoId" />
+
+        <label for="nome">Nome do aluno: </label>
+        <input type="text" id="nome" placeholder="Nome do aluno" required /><br />
+
+        <label for="responsavel1">Responsável(1): </label>
+        <input
+          type="text"
+          id="responsavel1"
+          placeholder="Responsável 1"
+          required
+        /><br />
+
+        <label for="responsavel2">Responsável(2): </label>
+        <input type="text" id="responsavel2" placeholder="Responsável 2" /><br />
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" id="endereco" placeholder="Endereço do aluno" /><br />
+
+        <label for="cep">CEP: </label>
+        <input type="text" id="cep" placeholder="CEP do aluno" /><br />
+
+        <label for="escolaId">Escola: </label>
+        <select id="escolaId" required>
+          <option value="1">Escola Municipal ABC</option>
+          <option value="2">Colégio Futuro</option></select
+        ><br />
+
+        <label for="dataNascimento">Data de nascimento: </label>
+        <input type="date" id="dataNascimento" /><br />
+
+        <label for="dataPagamento">Pagamento: </label>
+        <input type="date" id="dataPagamento" /><br />
+        
+        <button type="submit">Salvar</button>
+      </form>
+
+      <button id="btnVoltar">Voltar</button>
+    </main>
+    
+
+    <script src="cadastroAluno.js"></script>
+  </body>
+</html>
